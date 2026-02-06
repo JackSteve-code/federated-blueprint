@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkfederated_blueprint=globalThis.webpackChunkfederated_blueprint||[]).push([[4583],{6866(e,r,t){t.r(r),t.d(r,{default:()=>a});t(6540);var d=t(6347),u=t(4848);function a(){return(0,u.jsx)(d.rd,{to:"/federated-blueprint/docs/intro"})}}}]);
