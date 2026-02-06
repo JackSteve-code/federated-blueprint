@@ -9,10 +9,10 @@ const config: Config = {
   tagline: 'Secure, Distributed AI Without Centralized Data',
   favicon: 'img/favicon.ico',
 
-  url: 'https://JackSteve-code.github.io',
+  url: 'https://jacksteve-code.github.io',
   baseUrl: '/federated-blueprint/',
 
-  organizationName: 'JackSteve-code',
+  organizationName: 'JackSteve-code', // Make sure this matches your GitHub username exactly
   projectName: 'federated-blueprint',
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
@@ -31,29 +31,29 @@ const config: Config = {
   themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
-    [
-      'classic',
-      {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
-          // ✅ This removes the breadcrumbs at the top
-          breadcrumbs: false, 
-        },
-        blog: false,
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      } satisfies Preset.Options,
-    ],
+  [
+    'classic',
+    {
+      docs: {
+        routeBasePath: '/', // Add this line to make docs the root
+        sidebarPath: './sidebars.ts',
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
+      blog: false,
+      theme: {
+        customCss: './src/css/custom.css',
+      },
+    } satisfies Preset.Options,
   ],
+],
 
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
       type: 'text/css',
-      integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      integrity:
+        'sha384-n8MVd4RsNIU0HnZKzVZ8v+oF4z4YdG2I0l7X0rGUNShUMHbOWcZH/5LiKwZC2v9E',
       crossorigin: 'anonymous',
     },
   ],
@@ -68,11 +68,10 @@ const config: Config = {
     navbar: {
       title: 'Federated Blueprint',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Federated Blueprint Logo',
         src: 'img/logo.svg',
       },
       items: [
-        // ✅ Fixed: Added back the sidebar link to the navbar
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -95,8 +94,7 @@ const config: Config = {
           items: [
             {
               label: 'Executive Summary',
-              // ✅ Fixed: Link now points to the correct root index
-              to: '/docs/', 
+              to: '/docs/',
             },
           ],
         },
@@ -117,7 +115,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-  } satisfies Preset.ThemeConfig,
+  },
 };
 
 export default config;

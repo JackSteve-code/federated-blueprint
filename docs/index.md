@@ -1,10 +1,9 @@
 ---
 slug: /
-sidebar_label: Overview
+sidebar_position: 1
 ---
+##### Executive summary
 
-
-### Executive Summary
 
 **Federated Learning** (FL) is a decentralized machine learning paradigm that enables collaborative model training across multiple distributed participants—such as edge devices, mobile phones, edge servers, or organizational silos—without ever centralizing or exchanging raw data. Instead of uploading sensitive datasets to a single repository, participants train models locally on their private data and share only model updates (e.g., gradients or parameter deltas). A central orchestrator aggregates these updates to iteratively refine a shared global model, using techniques like Federated Averaging (FedAvg) while preserving data locality.
 
