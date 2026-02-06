@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkfederated_blueprint=globalThis.webpackChunkfederated_blueprint||[]).push([[1903],{1912(e){e.exports=JSON.parse('{"blogBasePath":"/federated-blueprint/blog","blogTitle":"Blog","authorsListPath":"/federated-blueprint/blog/authors"}')}}]);

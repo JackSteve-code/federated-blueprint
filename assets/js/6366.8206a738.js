@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkfederated_blueprint=globalThis.webpackChunkfederated_blueprint||[]).push([[6366],{6366(e,r,t){t.d(r,{createArchitectureServices:()=>a.S});var a=t(8980);t(7960)}}]);

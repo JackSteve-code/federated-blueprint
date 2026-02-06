@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkfederated_blueprint=globalThis.webpackChunkfederated_blueprint||[]).push([[5471],{8182(e){e.exports=JSON.parse('{"metadata":{"permalink":"/federated-blueprint/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
