@@ -1,41 +1,68 @@
-# Website
+# The Federated Learning Production Blueprint
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+**Secure, Scalable, Production-Ready Federated Learning Without Centralizing Sensitive Data**
 
-## Installation
 
-```bash
-yarn
-```
+This is a **comprehensive, engineering-first blueprint** for designing, building, securing, deploying, and operating **production-grade federated learning (FL)** systems in 2026 and beyond.
 
-## Local Development
+It covers the full stack — from threat modeling and secure aggregation to observability, compliance (GDPR/HIPAA), heterogeneity handling, model lifecycle, real-world case studies, trade-offs, and future directions — while keeping raw data local and private.
 
-```bash
-yarn start
-```
+Perfect for:
+- ML/AI engineers implementing distributed training
+- System architects building scalable, resilient FL infrastructure
+- Security & privacy teams ensuring threat mitigation and regulatory alignment
+- Enterprise leaders evaluating privacy-preserving collaborative AI
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Why Federated Learning?
 
-## Build
+Centralized training creates unacceptable risks: privacy breaches, regulatory fines, data silos, trust issues, and massive transfer costs. Federated Learning enables high-quality models trained across distributed devices/silos — sharing **only model updates**, never raw data — delivering better generalization, lower latency, and fundamentally stronger privacy.
 
-```bash
-yarn build
-```
+This blueprint turns theory into production reality with modular architectures, pseudocode, comparison tables, benchmarks, diagrams, and lessons from deployments like Google Gboard, NVIDIA FLARE healthcare consortia, and cross-bank fraud detection.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Table of Contents
 
-## Deployment
+- [Abstract / Executive Summary](docs/01_abstract.md)
+- [The Problem with Centralized AI Training](docs/02_centralized_problems.md)
+- [Why Federated Learning Matters](docs/03_why_fl_matters.md)
+- [Fundamentals of Federated Learning](docs/04_fundamentals.md) — Core concepts, paradigms, algorithms (FedAvg, FedProx, FedNova), DP in FL
+- [Threat Model & Security Foundations](docs/05_threat_model.md) — Poisoning, inference attacks, honest-but-curious servers
+- [Federated Learning System Architecture](docs/06_architecture.md) — Client/server design, secure aggregation, communication flows
+- [Secure Aggregation & Privacy-Preserving Techniques](docs/07_privacy_techniques.md) — Masking protocols, DP budgets, HE/TEEs
+- [Model Lifecycle Management](docs/08_lifecycle.md) — Initialization, versioning, continuous training, drift detection
+- [Data Governance & Compliance](docs/09_governance.md)
+- [Production Deployment Blueprint](docs/10_deployment.md) — Cloud/on-prem/hybrid, Kubernetes, edge
+- [Monitoring, Observability & Operations](docs/11_monitoring.md) — Metrics, logging, incident response
+- [Case Studies & Real-World Applications](docs/12_case_studies.md) — Healthcare, finance, mobile/IoT
+- [Performance Trade-offs & Limitations](docs/13_tradeoffs.md)
+- [Future Directions & Research Frontiers](docs/14_future.md)
+- [Conclusion & Recommendations](docs/15_conclusion.md)
 
-Using SSH:
+(Full document is in the `/docs/` folder as individual markdown files for easy navigation. Or view the compiled version if you add a PDF.)
 
-```bash
-USE_SSH=true yarn deploy
-```
+## Key Features of This Blueprint
 
-Not using SSH:
+- Production-focused (not research survey): operational patterns, fault tolerance, cost modeling, observability
+- Layered security by design: secure aggregation, differential privacy, robust aggregation, TEEs
+- Heterogeneity handling: non-IID data, stragglers, dropouts, personalization
+- Real benchmarks & comparisons (2025–2026 datasets: FEMNIST, CIFAR-10 non-IID, etc.)
+- Framework-agnostic patterns compatible with Flower, NVIDIA FLARE, FedML, TensorFlow Federated
+- Visual aids: architecture diagrams, flow charts, tables (upload images to `/images/` if desired)
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## How to Use This Repository
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+1. **Read the blueprint** → Start with the [Abstract](docs/01_abstract.md) or jump to sections via the table of contents.
+2. **Reference in your projects** → Use the architecture patterns, pseudocode, threat models, and deployment guidance directly.
+3. **Contribute** → See [CONTRIBUTING.md](CONTRIBUTING.md) — welcome updates, new case studies, code examples (e.g., Flower impls), corrections, or additional benchmarks.
+
+## Contributing
+
+Contributions are very welcome!  
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on issues, pull requests, new sections, or code snippets.
+
+## License
+
+MIT License — free to use, adapt, fork, and reference in your work or organization.
+
+Built in Nairobi, Kenya — for a privacy-first, distributed AI world.
+
+#federatedlearning #privacypreservingai #secureml #productionml #mlops #differential-privacy #secure-aggregation #decentralizedai
