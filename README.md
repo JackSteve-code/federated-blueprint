@@ -2,6 +2,10 @@
 
 **Secure, Scalable, Production-Ready Federated Learning Without Centralizing Sensitive Data**
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/federated-learning-production-blueprint?style=social)](https://github.com/YOUR_USERNAME/federated-learning-production-blueprint)
+[![Last commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/federated-learning-production-blueprint)](https://github.com/YOUR_USERNAME/federated-learning-production-blueprint/commits/main)
+[![Open issues](https://img.shields.io/github/issues-raw/YOUR_USERNAME/federated-learning-production-blueprint)](https://github.com/YOUR_USERNAME/federated-learning-production-blueprint/issues)
 
 This is a **comprehensive, engineering-first blueprint** for designing, building, securing, deploying, and operating **production-grade federated learning (FL)** systems in 2026 and beyond.
 
